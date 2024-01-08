@@ -1,0 +1,198 @@
+@import "./_snowpack/tailwindcss/base.css";
+@import "./_snowpack/tailwindcss/components.css";
+@import "./_snowpack/tailwindcss/utilities.css";
+
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --avocado: #699049; 
+    --gray-light: rgb(248, 248, 248);
+    --gray: rgb(101, 101, 101);
+    --white: rgb(255, 255, 255); 
+    --dark: rgb(0, 0, 0);
+    --xs: 1.2rem;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+
+}
+
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+/** -- HEADER -- **/
+.header{
+    min-width: 270px;
+}
+
+/*Header- top */
+.header_t{
+    height: 35px;
+    background: var(--avocado);
+}
+
+/*Header- links img */
+.link-img img{
+    width: 20px;
+    height: 20px;
+}
+
+/*Header- bottom */
+.header_b{
+    background-color: var(--dark);
+}
+
+/*Header- img container*/
+.header_img{
+    height: 400px;
+}
+
+/*Header- title text*/
+.title{
+    color: var(--white);
+    font-family:'Lobster', sans-serif;
+    font-size: 9rem;
+    font-weight: 900;
+} 
+
+/*Header- subtitle text */
+.subtitle{
+    color: var(--white);
+    font-size: 2rem;
+    letter-spacing: .6rem;
+    padding-left: 22px;
+}
+
+/** -- MAIN -- **/
+.containerAvocados{
+    padding-bottom: 70px;
+}
+
+/*Products container*/
+.containerAvocados_products{
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/*Avocados card - Js */
+.cardAvocado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Js */
+.cardAvocado h2{
+    font-weight: bold;
+}
+
+.window-inactive{
+    display: none;
+}
+
+/*Avocado window - container*/
+.containerAvocados_window_container{
+    display: grid;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    place-content: center;
+}
+
+/*Avocado window - background*/
+.containerAvocados_window_Background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: var(--dark);
+    z-index: -1;
+}
+
+/*Avocado window - Avocado*/
+.containerAvocados_window_Avocado{
+    width: 85%;
+    height: 400px;
+    padding: 12px;
+    place-self: center;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 2px 0px var(--gray);
+    z-index: 3;
+}
+
+.avocados-window-close{
+    width: 20px;
+    height: 20px;
+    background-image:url("/icon-close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Avocado random container*/
+.avocadoRandom{
+    margin-bottom: 70px;
+}
+
+/*Avocado random information container */
+.avocadoRandom_Information{
+    padding: 50px 0;
+    margin-bottom: 60px;
+    text-align: left;
+    background: var(--gray-light); 
+}
+
+/*Avocado random information */
+.avocadoRandom_Information div{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*Avocado random information - title */
+.avocadoRandom_Information h3{
+    font-family:'Lobster', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 1.8rem;
+    letter-spacing: .6rem;
+}
+
+/*Avocado random information - p */
+.avocadoRandom_Information p{
+    font-size: 1.8rem;
+}
+
+/*Avocado random information about dishes*/
+.avocadoRandom_dishes{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/*Avocado random information about dishes - img*/
+.dish img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/*Avocado random information about dishes - p*/
+.dish p{
+    font-weight: 500;
+}
+
+
+/** -- FOOTER -- **/
+/*Footer -img*/
+footer img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}

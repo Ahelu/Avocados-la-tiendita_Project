@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+    <!-- Title -->
+    <title>La tiendita</title>
+    <link rel="shortcut icon" href="./assets/icons/avocado.ico">
+
+    <!-- Links -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./index.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Wrapped -->
+    <div>  
+      <!-- Header -->
+      <div class="header w-full min-w-[270px] text-center mb-5">
+        <!-- Header top -->
+        <ul class="header_t flex justify-around items-center">
+          <!-- Github -->
+          <li class="link-img">
+            <a href="https://github.com/Ahelu" target="_blank">
+              <img src="./assets/icons/github.svg" alt="gh">
+            </a>
+          </li>
+
+          <!-- Linkedin -->
+          <li class="link-img">
+            <a href="https://www.linkedin.com/in/ahelu/" target="_blank">
+              <img src="./assets/icons/linkedin.svg" alt="in">
+            </a>
+          </li>
+
+          <!-- Linkedin -->
+          <li class="link-img">
+            <a href="/">
+              <img src="./assets/icons/facebook.svg" alt="fb">
+            </a>
+          </li>
+        </ul>
+
+        <!-- Header bottom -->
+        <div class="header_b grid place-items-center">
+          <!-- Header bottom - Img -->
+          <figure class="header_img relative">
+            <img src="https://images.pexels.com/photos/11831458/pexels-photo-11831458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img-hola-aquí-toy" class="w-screen h-full object-cover opacity-50">
+          </figure>
+
+          <!-- Header titles -->
+          <div class="header_title absolute leading-[8rem]">
+            <h1 class="title">
+              La tiendita
+            </h1>
+            <h2 class="subtitle">
+              Avocados
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <main class="containerAvocados">
+        <!-- Products -->
+        <div class="containerAvocados_products my-[0] grid justify-items-center gap-6">
+          <!-- //Rendering products -->
+        </div>
+
+        <!-- Show Avocado -->
+        <div class="containerAvocados_window window-inactive">
+          <!-- //Show Avocado -->
+        </div>
+      </main>
+
+      <div class="avocadoRandom w-full flex flex-col justify-items-center items-center">
+        <section class="avocadoRandom_Information w-screen px-[0]">
+          <div>
+            <h3>¿Did you now...?</h3>
+            <p>The avocado is native to Mexico, Colombia, and Venezuela. The ancient Aztecs called it ahuacatl and the first Spaniards in America baptized it as "pear of the Indies".
+
+            It is rich in minerals such as magnesium and potassium. Provides significant amounts of vitamin E – powerful antioxidant— vitamin C and vitamin B. 
+              
+            You can add it to your dishes as...</p>
+          </div>
+        </section>
+        <section class="avocadoRandom_dishes w-4/5 grid justify-items-center gap-24 text-center">
+          <figure class="dish">
+              <img src="https://images.pexels.com/photos/793785/pexels-photo-793785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="avocado-food">
+              <p>Egg</p>
+          </figure>
+
+          <figure class="dish">
+              <img src="https://images.pexels.com/photos/8775574/pexels-photo-8775574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="avocado-food">
+              <p>Toast</p>
+          </figure>
+
+          <figure class="dish">
+              <img src="https://images.pexels.com/photos/4768991/pexels-photo-4768991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="avocado-food">
+              <p>Salad</p>
+          </figure>
+
+          <figure class="dish">
+              <img src="https://images.pexels.com/photos/12035834/pexels-photo-12035834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="avocado-food">
+              <p>Dip</p>
+          </figure>
+        </section>
+      </div>
+
+      <footer class="w-full h-[200px]">
+        <img src="./assets/icons/wave1.svg" alt="footer-img">
+      </footer>
+    </div>
+
+    <!-- Add more scripts here -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
